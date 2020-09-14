@@ -1,0 +1,48 @@
+version: "3"
+services:
+  celery-app:
+    container_name: celery
+    image: gsolorza/celery:v1
+    volumes:
+      - ${REPO_FOLDER}/celery:/usr/src/app
+      - ${REPO_FOLDER}/files:/usr/src/app/files
+    restart: always
+    depends_on: 
+      - rabbitmq-app 
+      - redis-app
+    networks:
+      - frontend
+      - backend
+
+  rabbitmq-app:
+    container_name: rabbitmq
+    image: gsolorza/rabbitmq:v1
+    restart: always
+    networks:
+      - backend
+  
+  redis-app:
+    container_name: redis
+    image: gsolorza/redis:v1
+    restart: always
+    networks:
+      - backend
+  
+  django-app:
+    container_name: django
+    image: gsolorza/django:v1
+    volumes:
+      - ${REPO_FOLDER}/django:/usr/src/app
+      - ${REPO_FOLDER}/files:/usr/src/app/files
+    restart: always
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "8000:8000"
+
+networks:
+  frontend:
+
+  backend:
+    internal: true
