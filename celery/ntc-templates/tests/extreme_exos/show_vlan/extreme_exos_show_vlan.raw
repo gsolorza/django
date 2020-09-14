@@ -1,0 +1,77 @@
+-----------------------------------------------------------------------------------------------
+Name            VID  Protocol Addr       Flags                         Proto  Ports  Virtual   
+                                                                              Active router
+                                                                              /Total
+-----------------------------------------------------------------------------------------------
+A7_BF-PE        160  10.1.112.4     /24  -f-------o--Tv----P---------- ANY    2 /3   VR-Default 
+A7_CMR-CL       161  10.1.113.4     /25  -f-------o--Tv----P---------- ANY    2 /3   VR-Default 
+Adm_Virt_Center_145 145  --------------------------------T---------------- ANY    2 /2   VR-Default 
+Aplicacion-CL-DCC 2238 --------------------------------T---------------- ANY    2 /2   VR-Default 
+Balanceadores-Nortel 107  --------------------------------T---------------- ANY    2 /2   VR-Default 
+Balanceo_DNS    5    --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+BalIntCI_vlanExt 780  --------------------------------T---------------- ANY    2 /2   VR-Default 
+BalIntCI_vlanInt 781  --------------------------------T---------------- ANY    2 /2   VR-Default 
+BaseDeDatos-CL-DCC 2239 --------------------------------T---------------- ANY    2 /2   VR-Default 
+Citrix_servers_cientec 118  --------------------------------T---------------- ANY    2 /2   VR-Default 
+Cluster-FWNokia 11   --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+DCC-To-CDLV_PDI 672  ------------------------------------------------- ANY    2 /2   VR-Default 
+DCC-To-CDLV_Respaldo 671  ------------------------------------------------- ANY    2 /2   VR-Default 
+DCC-To-X670     689  10.200.25.137  /29  -f-------o------------------- ANY    1 /1   VR-Default 
+DCP_Interswitch 2113 10.200.24.33   /29  -f-------o------------------- ANY    1 /1   VR-Default 
+DCP_LV_Paso1    2112 10.200.24.26   /29  -f-------o------------------- ANY    1 /1   VR-Default 
+Default         1    --------------------D---------------------------- ANY    0 /0   VR-Default 
+FALA_CTRL_4     3004 --------------------------------------C---------- ANY    2 /2   VR-Default 
+FW_VPN_BANCO    305  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+FwProveedores_Internet 721  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+HA-Int1_FWClusterPaises 1857 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+HA-Int2_FWClusterPaises 1858 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+HA1-B_FW-PAN    180  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+HA2-B_FW-PAN    181  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Local_servers_Cientec 106  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Local_servers_Rosas 110  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Mgmt            4095 10.249.3.201   /22  ----------------------------- ANY    1 /1   VR-Mgmt    
+Navegacion_LAN_Interna 1648 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+NetApp_2098     2098 --------------------------------T---------------- ANY    2 /2   VR-Default 
+New-Servidores  104  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Proveedores_3   77   --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Proveedores_Externos 1636 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Proveedores_Externos2 203  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Respaldos       1822 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Sala_Rosas      108  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+ser_balanceados 98   --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+ser_balanceados2 99   --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Serv_Extendida  202  10.1.250.2     /23  -f-------o--Tv----P---------- ANY    2 /3   VR-Default 
+Servidores_Cientec 102  --------------------------------T---------------- ANY    2 /2   VR-Default 
+Servidores_DAG  130  --------------------------------T---------------- ANY    2 /2   VR-Default 
+Servidores_GTD  112  10.1.32.9      /22  -f-------o--Tv----P---------- ANY    2 /3   VR-Default 
+Servidores_LoEspejo 101  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Servidores_Rosas 100  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Sodimac         451  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Stress-open2    600  --------------------------------T---------------- ANY    2 /2   VR-Default 
+Synapsis        1041 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Synapsis_BalanceoSrv 1048 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Synapsis_BalanceoVip 1047 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Synapsis_Desa_Serv 1049 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Synapsis_Desa_Serv2 1050 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Synapsis_Mgmt   1052 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+VIP_Balanceadas 500  10.107.1.2     /24  -f-------o--Tv----P---------- ANY    2 /3   VR-Default 
+WController_CD-SanBernardo 1655 --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+Wireless_Controller 141  10.202.15.98   /27  -f-------o--Tv----P---------- ANY    2 /3   VR-Default 
+WLC_HA          201  --------------------------------T-----P---------- ANY    2 /3   VR-Default 
+WMOS_ServidoresApp 95   --------------------------------T---------------- ANY    2 /2   VR-Default 
+WMOS_ServidoresWeb 96   --------------------------------T---------------- ANY    2 /2   VR-Default 
+-----------------------------------------------------------------------------------------------
+Flags : (B) BFD Enabled, (c) 802.1ad customer VLAN, (C) EAPS Control VLAN,
+        (d) Dynamically created VLAN, (D) VLAN Admin Disabled,
+        (e) CES Configured, (E) ESRP Enabled, (f) IP Forwarding Enabled,
+        (F) Learning Disabled, (h) TRILL Enabled, (i) ISIS Enabled,
+        (I) Inter-Switch Connection VLAN for MLAG, (k) PTP Configured,
+        (l) MPLS Enabled, (L) Loopback Enabled, (m) IPmc Forwarding Enabled,
+        (M) Translation Member VLAN or Subscriber VLAN, (n) IP Multinetting Enabled,
+        (N) Network Login VLAN, (o) OSPF Enabled, (O) Flooding Disabled,
+        (p) PIM Enabled, (P) EAPS protected VLAN, (r) RIP Enabled,
+        (R) Sub-VLAN IP Range Configured, (s) Sub-VLAN, (S) Super-VLAN,
+        (t) Translation VLAN or Network VLAN, (T) Member of STP Domain,
+        (v) VRRP Enabled, (V) VPLS Enabled, (W) VPWS Enabled, (Z) OpenFlow Enabled
+
+Total number of VLAN(s) : 57

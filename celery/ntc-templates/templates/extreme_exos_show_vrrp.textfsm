@@ -1,0 +1,10 @@
+Value VLAN_NAME (\S+)
+Value FLAG (\w+)
+Value VRID (\d+)
+Value PRIORITY (\d+)
+Value VIRTUAL_IP_ADDRESS (\S+)
+Value STATE (\w+)
+Value MASTER_MAC_ADDRESS (\S+)
+
+Start
+  ^(\s+)?${VLAN_NAME}\(${FLAG}\)\s+(0+)?${VRID}\s+(0+)?${PRIORITY}\s+${VIRTUAL_IP_ADDRESS}\s+${STATE}\s+${MASTER_MAC_ADDRESS} -> Record

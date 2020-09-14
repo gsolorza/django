@@ -1,0 +1,11 @@
+FROM centos:latest
+LABEL maintainer="ge.solorzano@gmail.com"
+RUN yum update -y
+RUN yum install python38 -y
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+COPY . .
+RUN pip3 install --no-cache-dir -r requirements.txt
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+EXPOSE 8000
+

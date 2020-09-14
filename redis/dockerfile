@@ -1,0 +1,5 @@
+FROM redis
+RUN apt update -y
+ADD redis.conf /etc/redis.conf
+EXPOSE 6379
+

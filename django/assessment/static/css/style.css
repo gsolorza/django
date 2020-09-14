@@ -1,0 +1,100 @@
+.logo {
+    width: 150px;
+}
+
+.back-smoke {
+    background-color:whitesmoke;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.upload-form {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.centered-table {
+    max-width: 50%;
+    margin: 5% auto auto auto;
+    text-align: center;
+ }
+
+.progress {
+    width: 30%;
+    margin: auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.inCmdRunner #result {
+    display: block;
+    padding: 10px 0 0 24px;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    letter-spacing: .6px;
+    text-align: left;
+    color: #58585b;
+}
+
+.inCmdRunner pre {
+    overflow: visible;
+    background-color: transparent;
+    border: none;
+}
+
+.inCmdRunner .result-container {
+    width: 48%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    height: calc(100vh - 270px);
+    background-color: #fafafa;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+#title {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.form-group label {
+    padding-top: 0.4rem;
+    flex: 20%;
+  }
+
+.form-group input {
+    flex: calc(60% - 1rem);
+}
+
+.textcolor {
+    color: green;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.center {
+    margin: 0 auto 0 auto;
+}
+
+div#download {
+    margin: 0 auto 0 auto;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+FROM centos:latest
+RUN yum update -y
+ENV NET_TEXTFSM /usr/src/app/ntc-templates
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+COPY . .
+RUN yum install python38 -y
+RUN pip3 install --no-cache-dir -r requirements.txt
+CMD celery -A assessment worker --loglevel=info

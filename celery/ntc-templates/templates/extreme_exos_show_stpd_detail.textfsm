@@ -1,0 +1,21 @@
+Value STPD_INSTANCE (\S+)
+Value STP_STATUS (ENABLED|DISABLED)
+Value VLAN_TAG (\S+)
+Value PORTS (\S+)
+Value PARTICIPATING_VLANS (\S+)
+Value ROOT_PORT (\S+)
+Value BRIDGE_ID ([0-9a-f:]+)
+Value DESIGNATED_ROOT ([0-9a-f:]+)
+Value PORT_FLAGS ((\d+\([BDFIL]\)(\s+)?,?)+)
+
+Start
+  ^Stpd:\s+${STPD_INSTANCE}\s+Stp:\s+${STP_STATUS} -> Continue
+  ^802\.1Q\s+Tag:\s+${VLAN_TAG} 
+  ^Ports:\s+${PORTS}
+  ^Participating\s+Vlans:\s+${PARTICIPATING_VLANS}
+  ^.*Root\s+Port(\s+)?:\s+${ROOT_PORT}
+  ^BridgeID\s+:\s+${BRIDGE_ID}
+  ^Designated\s+root\s+:\s+${DESIGNATED_ROOT}
+  ^\s+${PORT_FLAGS} -> Record
+
+  

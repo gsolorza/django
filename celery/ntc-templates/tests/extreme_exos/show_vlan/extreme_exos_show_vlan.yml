@@ -1,0 +1,6 @@
+---
+parsed_sample:
+  - vlan_name: "A7_BF-PE"
+    vlan_id: "160"
+  - vlan_name: "A7_CMR-CL"
+    vlan_id: "161"

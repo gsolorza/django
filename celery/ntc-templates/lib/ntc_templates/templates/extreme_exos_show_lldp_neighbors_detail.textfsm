@@ -1,0 +1,10 @@
+Value LOCAL_PORT (\d+)
+Value NEIGHBOR_PORT_ID (\S+)
+Value NEIGHBOR_SYSTEM_NAME (\S+)
+
+Start
+  ^LLDP\s+Port\s+${LOCAL_PORT} -> Continue
+  ^\s+(-\s+)?Port\s+ID(\s+)?:\s+${NEIGHBOR_PORT_ID}
+  ^\s+(-\s+)?System\s+Name(\s+)?:\s+${NEIGHBOR_SYSTEM_NAME} -> Record
+
+  

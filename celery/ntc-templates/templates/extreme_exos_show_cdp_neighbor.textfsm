@@ -1,0 +1,6 @@
+Value DEVICE_ID (\S+)
+Value LOCAL_PORT (\d+)
+Value REMOTE_PLATFORM_AND_PORT_ID (.*)
+
+Start
+  ^${DEVICE_ID}\s+${LOCAL_PORT}\s+\d+\s+[RBTSHIR\s]+${REMOTE_PLATFORM_AND_PORT_ID} -> Record

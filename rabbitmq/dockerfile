@@ -1,0 +1,4 @@
+FROM rabbitmq
+RUN apt update -y
+ADD rabbitmq.conf /etc/rabbitmq/
+ADD definitions.json /etc/rabbitmq/

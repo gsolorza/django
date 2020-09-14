@@ -1,0 +1,8 @@
+Value PORT (\S+)
+Value NEIGHBOR (\S+)
+Value NEIGHBOR_ID (\S+)
+Value REMOTE_PORT (\S+)
+Value NUM_VLANS (\S+)
+
+Start
+  ^${PORT}\s+${NEIGHBOR}\s+${NEIGHBOR_ID}\s+${REMOTE_PORT}\s+(\S+)\s+${NUM_VLANS} -> Record

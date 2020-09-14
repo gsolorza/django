@@ -1,0 +1,10 @@
+Value VRF (\S+)
+Value DESTINATION ([\d.]+)
+Value MAC ([0-9a-f:]+)
+Value STATIC (\w+)
+Value VLAN_NAME (\S+)
+Value VLAN_ID (\d+)
+Value PORT (\d+)
+
+Start
+  ^${VRF}\s+${DESTINATION}\s+${MAC}\s+\d+\s+${STATIC}\s+${VLAN_NAME}\s+${VLAN_ID}\s+${PORT} -> Record

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{ commands|json_script:"commands" }}
+
+<main class="contain">
+    <section id="title" class="back-smoke">
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        <h1 class="no-margin" > Assessment </h1>
+    </section>
+    {% if messages %}
+        {% for message in messages %}
+            <div id="error-message" class="alert alert-danger no-margin centered-text back-smoke" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <section id="forms">
+        <div class="upload-form back-smoke">
+            <form id="main-form" action="{% url "connect" %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="inputClientName">Client Name</label>
+                    <input type="text" class="form-control" id="inputClientName" aria-describedby="clientHelp" placeholder="Client Name" name="clientName">
+                </div>
+                <div class="form-group">
+                    <label for="inputUsername">Username</label>
+                    <input type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Username" name="userName">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
+                </div>
+                <div class="custom-file">
+                    <label id="file-label" class="custom-file-label" for="customFileLang">Upload CSV File</label>
+                    <input id="file" type="file" class="custom-file-input" id="customFileLang" lang="en" 
+                    name="uploaded file" accept=".csv">
+                </div>
+                <div id="command-list">
+                </div>
+                <div>
+                    <button type="file" class="btn btn-outline-secondary"> Submit </button>
+                </div>
+            </form>
+        </div>
+    </section> 
+</main>
+
+{% endblock content %}
